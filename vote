@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int age=29,b=18;
+clrscr();
+if(age>b)
+printf("ur eligible to vote");
+else
+printf("ur eligible to vote");
+getch();
+}
