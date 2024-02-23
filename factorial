@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b=5,fat=1;
+clrscr();
+for(a=1;a<=b;a++)
+{
+fat=fat*a;
+}
+printf("%d",fat);
+getch();
+}
