@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int bank_balance=200,withdrawlamount=500;
+if(withdrawalamount<=bank_balance)
+{
+printf("we can get amount");
+}
+else
+{
+printf("insuffient balance");
+}
+getch();
+}
