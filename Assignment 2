@@ -1,0 +1,29 @@
+
+#include <stdio.h>
+float calculateTotalCost(float applePrice, float bananaPrice, float promoPrice) {
+    float totalCost = (applePrice * 100 * 5) + (bananaPrice * 60 * 3) + (promoPrice * 150 * 7);
+    return totalCost;
+}
+
+float calculateDiscount(float totalCost) {
+    float discount = 0.0;
+    if (totalCost > 300)
+        discount = 0.2 * totalCost;
+    return discount;
+}
+float calculateTotalWithDiscount(float totalCost, float discount) {
+    return totalCost - discount;
+}
+int main() {
+    float applePrice = 5;
+    float bananaPrice = 3; 
+    float promoPrice = 7; 
+    float totalCost, discount, totalWithDiscount;
+    totalCost = calculateTotalCost(applePrice, bananaPrice, promoPrice);
+    discount = calculateDiscount(totalCost);
+    totalWithDiscount = calculateTotalWithDiscount(totalCost, discount);
+    printf("Total amount: %.2f\n", totalCost);
+    printf("Discount amount: %.2f\n", discount);
+    printf("Total amount with discount: %.2f\n", totalWithDiscount);
+    return  0;
+    }
